@@ -183,7 +183,7 @@ def centroid_pivot(points):
     if 12 not in pts or 1 not in pts or 2 not in pts:
         return MeasurementResult(None, None, True, dev, None, None)
 
-    p1, p2, p12 = pts[1], pts[2], pts[12]
+    p1, p2 = pts[1], pts[2]
 
     pivot = (p1 + p2 + p3) / 3.0
     body_dir = (p9 - pivot) / np.linalg.norm(p9 - pivot)
